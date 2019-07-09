@@ -1,0 +1,68 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@font-face {
+  font-family: "Audi-font";
+  src: url("../fonts/AudiTypeV03-Normal.otf") format("otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Audi-font";
+  src: url("../fonts/AudiTypeV03-Italic.otf") format("otf");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Audi-font";
+  src: url("../fonts/AudiTypeV03-Bold.otf") format("otf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Audi-font";
+  src: url("../fonts/AudiTypeV03-BoldItalic.otf") format("otf");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "AudiType-Extended";
+  src: url("../fonts/AudiTypeV03-ExtendedNormal.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+body, html {
+  height: 100%;
+  font-family: Audi-font, monospace;
+}
+
+body {
+  background-image: linear-gradient(116deg, #33454a, #7c8e94);
+}
+
+.root-container {
+  margin-left: 371px;
+  max-width: 1078px;
+}
+
+.main_header__container {
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 978px;
+  height: 72px;
+}
+
+.main_picture {
+  width: 778px;
+  height: 327px;
+  margin-top: 238px;
+}
+
+.header {
+  font-family: AudiType-Extended;
+  font-size: 31px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=styles.css.map */
