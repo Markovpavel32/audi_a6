@@ -102,8 +102,12 @@ li {
   color: #ffffff;
 }
 
-.left_menu_item.active {
+.left_menu_item.active, .left_menu_item:hover {
   opacity: 1;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
