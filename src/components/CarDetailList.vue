@@ -42,13 +42,18 @@
         </template>
       </car-detail>
     </div>
-    <div class="car_detail_container" style="top: 593px;">
-      <car-detail class="flex-column d-inline-flex align-items-center" style="margin-left: 209px;">
+    <div class="car_detail_container" :style="{top: is_active_img ? '523px' : '593px', left: is_active_img ? '868px' : '876px'}">
+      <car-detail :img="is_active_img" class="flex-column d-inline-flex align-items-center">
         <template slot="header-text">
-          <pretty-square style="margin-bottom: 20px"></pretty-square>
+          <div @mouseover="is_active_img = true">
+            <pretty-square v-if="!is_active_img" style="margin-bottom: 20px; z-index: 1"></pretty-square>
+          </div>
+          <div @mouseleave="is_active_img = false" v-if="is_active_img"  class="audi_inside_container">
+            <img  src="../assets/audi_inside.png" alt="audi_inside" class="audi_inside">
+          </div>
         </template>
         <template slot="footer-text">
-          <div class="car_detail_tool" style="margin-top: 26px;">
+          <div  class="car_detail_tool" :style="`margin-top: ${is_active_img ? 26 : 28}px;`">
             <span>Уникальная технология</span>
             <br/>
             <span>mild hybrid</span>
@@ -56,8 +61,8 @@
         </template>
       </car-detail>
     </div>
-    <div class="car_detail_container" style="top: 579px;">
-      <car-detail class="flex-column d-inline-flex align-items-center" style="margin-left: 525px;">
+    <div class="car_detail_container" style="top: 579px; right: 531px;">
+      <car-detail class="flex-column d-inline-flex align-items-center">
         <template slot="header-text">
           <pretty-square style="margin-bottom: 20px"></pretty-square>
         </template>
@@ -79,6 +84,11 @@ import CarDetail from './CarDetail'
 import PrettySquare from '../assets/lib/PrettySquareItem'
 export default {
   name: 'car-detail-list',
-  components: {PrettySquare, CarDetail}
+  components: {PrettySquare, CarDetail},
+  data () {
+    return {
+      is_active_img: false
+    }
+  }
 }
 </script>
