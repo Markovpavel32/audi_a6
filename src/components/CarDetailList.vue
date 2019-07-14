@@ -1,11 +1,13 @@
 <template>
   <div>
-    <car-detail v-for="car_tool in car_tools" :car_tool="car_tool" :key="car_tool.top_content">
-      <template slot="img">
-        <img src="../assets/audi_inside.png" alt="audi_inside" class="audi_inside position-relative">
-      </template>
-    </car-detail>
-    <slot name="img"></slot>
+    <div class="position-absolute">
+      <car-detail v-for="car_tool in car_tools" :car_tool="car_tool" :key="car_tool.top_content">
+        <template slot="img">
+          <img src="../../static/audi_inside.png" alt="audi_inside" class="audi_inside position-relative">
+        </template>
+      </car-detail>
+      <slot name="img"></slot>
+    </div>
   </div>
 </template>
 

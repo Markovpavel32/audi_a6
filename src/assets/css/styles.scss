@@ -36,14 +36,16 @@
 }
 
 
-body, html {
-  height: 100%;
+html {
+  //background: linear-gradient(116deg, #33454a, #7c8e94);
   font-family: Audi-font, monospace;
+  height: 100%;
 }
 
 body {
   background-image: linear-gradient(116deg, #33454a, #7c8e94);
   font-size: 16px;
+  background-attachment: fixed;
 }
 ul {
   list-style-type: none;
@@ -55,13 +57,15 @@ li {
 
 
 .root-container {
-  margin-left: 371px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1078px;
 }
 
 .main_header__container {
-  margin-top: 80px;
-  margin-left: 100px;
+  margin-top: percentage(80/1080);
+  margin-left: auto;
+  margin-right: auto;
   width: 978px;
   height: 72px;
 }
@@ -141,11 +145,6 @@ li {
   opacity: 0.5;
 }
 
-.car_detail_item {
-  position: absolute;
-  width: 200px;
-}
-
 .car_detail_tool {
   font-family: 'Audi-font';
   font-size: 16px;
@@ -191,5 +190,6 @@ li {
   position: relative;
 }
 
-
-
+img {
+  max-width: 100%;
+}

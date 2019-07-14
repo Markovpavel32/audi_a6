@@ -5,7 +5,7 @@
         <left-menu @change_pic="change_pic" class="d-inline-block float-left left_menu_container"></left-menu>
         <car-detail-list class="d-inline-block float-right main_picture">
           <template slot="img">
-            <img :src="pic_link" alt="'audi_a6'">
+            <img :src="pic_link" alt="'audi_a6'" class="root-img">
           </template>
         </car-detail-list>
       </div>
@@ -21,12 +21,12 @@ export default {
   components: {CarDetailList, LeftMenu, MainHeader},
   data () {
     return {
-      pic_link: '../assets/audi_a6.png'
+      pic_link: '../../static/audi_a6.png'
     }
   },
   methods: {
     change_pic (uid) {
-      this.pic_link = `../assets/${uid}.png`
+      this.pic_link = `../../static/${uid}.png`
     }
   }
 }

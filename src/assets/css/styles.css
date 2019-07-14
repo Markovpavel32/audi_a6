@@ -29,14 +29,15 @@
   font-style: normal;
   font-weight: normal;
 }
-body, html {
-  height: 100%;
+html {
   font-family: Audi-font, monospace;
+  height: 100%;
 }
 
 body {
   background-image: linear-gradient(116deg, #33454a, #7c8e94);
   font-size: 16px;
+  background-attachment: fixed;
 }
 
 ul {
@@ -49,13 +50,15 @@ li {
 }
 
 .root-container {
-  margin-left: 371px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1078px;
 }
 
 .main_header__container {
-  margin-top: 80px;
-  margin-left: 100px;
+  margin-top: 7.4074074074%;
+  margin-left: auto;
+  margin-right: auto;
   width: 978px;
   height: 72px;
 }
@@ -129,19 +132,11 @@ li {
 }
 
 .stick {
+  left: 24px;
   width: 1px;
   height: 60px;
   border: 1px dashed #ffffff;
   opacity: 0.5;
-  position: absolute;
-}
-
-.car_detail_container {
-  position: absolute;
-}
-
-.car_detail_item {
-  position: absolute;
 }
 
 .car_detail_tool {
@@ -173,11 +168,24 @@ li {
 }
 
 .audi_inside {
+  position: relative;
   border-radius: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right 20px;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
