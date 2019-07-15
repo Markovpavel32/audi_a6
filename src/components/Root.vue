@@ -9,8 +9,11 @@
           </template>
         </car-detail-list>
         <div class="car_cost">{{car_cost}}</div>
+        <car-features></car-features>
         <div>
-          <custom-button></custom-button>
+          <router-link :to="{name: 'info-page'}">
+            <custom-button></custom-button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -21,10 +24,10 @@ import MainHeader from './MainHeader'
 import LeftMenu from './LeftMenu'
 import CarDetailList from './CarDetailList'
 import CustomButton from './CustomButton'
-import CarCost from './CarCost'
+import CarFeatures from './CarFeatures'
 export default {
   name: 'root',
-  components: {CarCost, CustomButton, CarDetailList, LeftMenu, MainHeader},
+  components: {CarFeatures, CustomButton, CarDetailList, LeftMenu, MainHeader},
   data () {
     return {
       pic_link: '../../static/audi_a6.png',

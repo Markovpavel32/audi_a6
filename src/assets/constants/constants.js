@@ -63,4 +63,11 @@ const CAR_TOOLS = [
   }
 ]
 
-export { COMPLETE_SETS, CAR_TOOLS }
+const CAR_FEATURES = [
+  '../../static/wheel.png',
+  '../../static/cabin.png',
+  '../../static/dashboard.png',
+  '../../static/audi_inside.png'
+]
+
+export { COMPLETE_SETS, CAR_TOOLS, CAR_FEATURES }

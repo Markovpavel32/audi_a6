@@ -1,6 +1,9 @@
 <template>
   <div class="info_page_container">
-    <img src="../../static/bitmap.png" alt="bitmap" class="salon">
+    <div class="salon-container">
+      <!--      <div style="height: 100%"></div>-->
+      <img src="../../static/bitmap.png" alt="bitmap" class="salon">
+    </div>
     <div class="info_text_container">
       <div class="info_page_title">MMI touch response c двумя сенсорными дисплеями</div>
       <div class="info_page_text">Новая концепция управления MMI touch response реализована с помощью двух крупных сенсорных дисплеев высокого
@@ -13,8 +16,10 @@
         автомобиля можно перемещать и фиксировать прикосновением пальца. Оцените гибкую, удобную, а главное, простую
         систему управления.</div>
     </div>
+
     <div class="half-circle-right"><img src="../../static/arrow-left-light.png" class="arrow-right"></div>
     <div class="half-circle-left"><img src="../../static/arrow-left-light.png" class="arrow-left"></div>
+    <div style="clear: both"></div>
   </div>
 </template>
 
