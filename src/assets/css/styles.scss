@@ -46,6 +46,7 @@ body {
   background-image: linear-gradient(116deg, #33454a, #7c8e94);
   font-size: 16px;
   background-attachment: fixed;
+  height: 100%;
 }
 ul {
   list-style-type: none;
@@ -55,6 +56,9 @@ li {
   color: #f2f2f2;
 }
 
+.app{
+  height: 100%;
+}
 
 .root-container {
   margin-left: auto;
@@ -66,15 +70,15 @@ li {
   margin-top: percentage(80/1080);
   margin-left: auto;
   margin-right: auto;
-  width: 978px;
-  height: 72px;
 }
 
 .main_picture {
   width: 778px;
-  height: 327px;
   margin-top: 238px;
+  display: inline-block;
+  float: right;
 }
+
 .audi_extended_normal_font {
   font-family: AudiType-Extended;
 }
@@ -89,6 +93,7 @@ li {
 
 .left_menu_container {
   margin-top: 181px;
+  display: inline-block;
 }
 
 .left_menu_item {
@@ -124,7 +129,6 @@ li {
   font-family: 'Audi-font';
   width: 224px;
   height: 52px;
-  margin-top: 74px;
   background: none;
   border: 1px solid #f2f2f2;
   font-size: 15px;
@@ -135,6 +139,10 @@ li {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin-top: 60px;
 }
 
 .stick {
@@ -192,4 +200,208 @@ li {
 
 img {
   max-width: 100%;
+}
+
+.info_page_container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  margin: percentage(20/1920);
+  background: #ffffff;
+}
+
+.salon {
+  height: 100%;
+  max-width: percentage(1229/1880);
+  float: right;
+}
+
+.info_text_container {
+  max-width: percentage(551/1880);
+  margin-left: percentage(60/1880);
+  margin-top: percentage(80/1880);
+  text-align: left;
+  float: left;
+}
+
+.info_page_title {
+  font-family: AudiType-Extended;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.info_page_text {
+  font-family: Audi-font;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.half-circle-right {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  background: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 0;
+  height: 74px;
+  width: 37px;
+}
+.half-circle-left {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  height: 74px;
+  width: 37px;
+}
+
+.arrow-right {
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.arrow-left {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.car_cost {
+  display: none;
+}
+
+.car_detail_list_container {
+  position: absolute;
+}
+
+@media(max-width: 1024px ) {
+  .salon {
+    max-width: 100%;
+    float: none;
+    height: 100vw;
+  }
+
+  .info_page_container {
+    position: relative;
+    max-height: none;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+  }
+
+  .info_text_container {
+    max-width: percentage(280/320);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: left;
+    float: none;
+  }
+  .half-circle-right, .half-circle-left, .arrow-left {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    width: 280px;
+    height: 120px;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: #f2f2f2;
+  }
+
+  .left_menu_container {
+    margin-top: 80px;
+    float: none;
+    white-space: nowrap;
+  }
+  .left_menu_item {
+    margin-left: 20px;
+    height: 30px;
+    border-left:  none;
+    border-bottom: 2px solid #f2f2f2;
+    opacity: 0.2;
+    display: inline-block;
+  }
+
+  .left_menu_item_content {
+    margin-left: 0;
+    line-height: 1.25;
+    letter-spacing: -0.2px;
+  }
+
+  .left_menu_item_content_cost{
+    display: none;
+  }
+
+  .custom_btn {
+    width: 280px;
+    float: none;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_picture {
+    max-width: 280px;
+    margin-top: 60px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .car_detail_list_container {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .car_detail_container {
+    display: none;
+  }
+
+  .car_cost {
+    font-family: Audi-font;
+    display: block;
+    width: 145px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 20px;
+  }
 }

@@ -33,7 +33,10 @@ export default {
   },
   methods: {
     change_active_item (uid) {
-      this.$emit('change_active_item', uid)
+      this.$emit('change_active_item', {
+        uid,
+        item_cost: this.item_cost
+      })
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="position-absolute" :style="{top: car_tool.position.top, left: car_tool.position.left}">
+  <div class="position-absolute car_detail_container" :style="{top: car_tool.position.top, left: car_tool.position.left}">
     <div class="d-flex flex-column align-items-center">
       <div v-if="!car_tool.opposite" @mouseover="is_active_img = true" style="margin-bottom: 20px">
         <pretty-square></pretty-square>

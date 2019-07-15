@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="position-absolute">
+    <div class="car_detail_list_container">
       <car-detail v-for="car_tool in car_tools" :car_tool="car_tool" :key="car_tool.top_content">
         <template slot="img">
           <img src="../../static/audi_inside.png" alt="audi_inside" class="audi_inside position-relative">

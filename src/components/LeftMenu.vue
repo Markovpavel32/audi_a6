@@ -10,7 +10,6 @@
                  :key="set.uid">
       </menu-item>
     </ul>
-    <custom-button class="d-inline-block float-left clickable"></custom-button>
   </div>
 </template>
 
@@ -29,9 +28,9 @@ export default {
     }
   },
   methods: {
-    change_active_item (uid) {
-      this.active_item = uid
-      this.$emit('change_pic', uid)
+    change_active_item (item) {
+      this.active_item = item.uid
+      this.$emit('change_pic', item)
     }
   }
 }

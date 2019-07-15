@@ -13,7 +13,7 @@ export default new Router({
       component: Root
     },
     {
-      path: 'info/',
+      path: '/info',
       name: 'info-page',
       component: InfoPage
     }
